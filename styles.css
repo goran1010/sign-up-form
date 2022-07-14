@@ -1,0 +1,165 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url(./font/Norse-Bold.otf);
+}
+.logo span {
+  font-family: Norse-Bold, Arial, Helvetica, sans-serif;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
+aside {
+  background-image: url(./img/photo-1585202900225-6d3ac20a6962.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  width: clamp(0%, 40%, 50%);
+}
+.container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  background: black;
+  height: 8rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  opacity: 0.7;
+}
+.logo > img {
+  height: 4rem;
+}
+
+.author {
+  background: none;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
+}
+.author > p {
+  text-align: center;
+}
+.author p > a {
+  color: white;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  width: clamp(50%, 60%, 100%);
+  justify-content: center;
+  background-color: rgb(236, 236, 236);
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 3rem;
+  gap: 2rem;
+  font-weight: bold;
+}
+.name,
+.mail,
+.password {
+  display: flex;
+  gap: 3rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+  align-self: stretch;
+}
+form > div > div > p {
+  font-weight: 600;
+}
+div > div > div {
+  display: flex;
+  flex-direction: column;
+}
+
+main a {
+  color: #596d48;
+  text-decoration: none;
+  font-weight: bold;
+}
+label {
+  font-size: 0.7rem;
+}
+
+label {
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+input {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  height: 1.5rem;
+  padding-left: 2px;
+}
+
+input:invalid {
+  border: 1px solid rgb(255, 146, 146);
+}
+input:focus {
+  border: 1px solid lightblue;
+  outline: none;
+}
+input:valid {
+  border: 1px solid rgb(174, 253, 185);
+}
+input:optional {
+  border: 1px solid lightgray;
+}
+.password > div {
+  position: relative;
+}
+.password-invalid {
+  position: absolute;
+  font-size: 0.6rem;
+  font-weight: bold;
+  bottom: -0.7rem;
+  color: rgb(255, 146, 146);
+}
+.welcome,
+.form,
+.sign-up {
+  padding: 1rem 10% 1rem 5%;
+}
+.form {
+  background-color: white;
+}
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 1rem;
+  font-size: 0.7rem;
+}
+button {
+  background-color: #596d48;
+  padding: 0.8rem 3rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+}
