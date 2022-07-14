@@ -108,25 +108,24 @@ label {
   font-weight: bold;
 }
 input {
-  border: 1px solid lightgray;
+  border: 2px solid lightgray;
   border-radius: 4px;
   height: 1.5rem;
-  padding-left: 2px;
 }
 
 input:invalid {
-  border: 1px solid rgb(255, 146, 146);
+  border: 2px solid rgb(255, 146, 146);
 }
 input:focus {
-  border: 1px solid lightblue;
+  border: 2px solid lightblue;
   outline: none;
+  box-shadow: 2px 2px 2px lightgray;
 }
+
 input:valid {
-  border: 1px solid rgb(174, 253, 185);
+  border: 2px solid rgb(174, 253, 185);
 }
-input:optional {
-  border: 1px solid lightgray;
-}
+
 .password > div {
   position: relative;
 }
@@ -144,6 +143,7 @@ input:optional {
 }
 .form {
   background-color: white;
+  box-shadow: 0 4px 4px lightgray;
 }
 .sign-up {
   display: flex;

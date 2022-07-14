@@ -42,8 +42,8 @@
                 type="text"
                 name="first-name"
                 id="first-name"
-                title="Your firsts name"
                 required
+                autofocus
               />
             </div>
             <div>
@@ -69,7 +69,7 @@
                 name="password"
                 id="password"
                 pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
-                title="Password must have uppercase, lowercase and numbers"
+                title="Password must have at least one uppercase and lowercase letter and at least one number"
                 required
               />
               <div class="password-invalid"></div>
@@ -81,7 +81,7 @@
                 name="check-password"
                 id="check-password"
                 pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
-                title="Password must have uppercase, lowercase and numbers"
+                title="Password must have at least one uppercase and lowercase letter and at least one number"
                 required
               />
             </div>
